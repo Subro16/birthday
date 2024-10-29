@@ -1,0 +1,516 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100vh;
+  margin: 0 auto;
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  overflow: hidden;
+}
+
+.container div.six {
+  top: 10vh;
+  z-index: 1;
+}
+
+.container div.seven,
+.container div.eight {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+}
+
+.container > div {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
+}
+
+.one {
+  font-size: 4.5rem;
+}
+
+.one > img {
+  vertical-align: middle;
+  margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+.two {
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.three {
+  font-size: 3rem;
+}
+
+.four .text-box {
+  width: 600px;
+  margin: 0 auto;
+  border: 3px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+}
+
+.text-box p {
+  margin: 0;
+  text-align: left;
+}
+
+.text-box span {
+  visibility: hidden;
+}
+
+.text-box .fake-btn {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  color: #fff;
+  background-color: rgb(21, 161, 237);
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+.five p {
+  font-size: 2rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.idea-3 strong {
+  padding: 3px 5px;
+  border-radius: 3px;
+  display: inline-block;
+}
+
+.five .idea-5 {
+  font-size: 4rem;
+}
+
+.idea-5 span,
+.idea-6 span,
+.wish-hbd span {
+  display: inline-block;
+}
+
+.idea-6 span {
+  font-size: 15rem;
+}
+
+/* .six {
+  position: relative;
+} */
+
+.six {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.six img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.six .hat {
+  position: absolute;
+  width: 80px;
+  top: -35px;
+  left: 600%;
+  /* transform: scale(0.1); */
+}
+
+.six .lydia-dp {
+  width: 400px; /* Adjust as needed */
+  height: 400px; /* Matches width to create a square */
+  object-fit: cover; /* Ensures the image fills the square without distortion */
+  border-radius: 50%; /* Makes it circular if desired */
+  display: block;
+  margin: 0 auto; /* Centers the image horizontally */
+}
+
+.baloons img {
+  display: inline-block;
+  position: absolute;
+}
+
+.baloons img:nth-child(even) {
+  left: -10%;
+}
+
+.baloons img:nth-child(odd) {
+  right: -10%;
+}
+
+.baloons img:nth-child(3n + 0) {
+  left: 30%;
+}
+
+.eight svg {
+  width: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+
+.eight svg:nth-child(1) {
+  top: 7vh;
+  left: 5vw;
+  fill: #bd6ecf;
+}
+
+.eight svg:nth-child(2) {
+  top: 23vh;
+  left: 35vw;
+  fill: #7dd175;
+}
+
+.eight svg:nth-child(3) {
+  top: 33vh;
+  left: 23vw;
+  fill: #349d8b;
+}
+
+.eight svg:nth-child(4) {
+  top: 43vh;
+  left: 57vw;
+  fill: #347a9d;
+}
+
+.eight svg:nth-child(5) {
+  top: 68vh;
+  left: 7vw;
+  fill: #c66053;
+}
+
+.eight svg:nth-child(6) {
+  top: 42vh;
+  left: 77vw;
+  fill: #bfaa40;
+}
+
+.eight svg:nth-child(7) {
+  top: 68vh;
+  left: 83vw;
+  fill: #e3bae8;
+}
+
+.eight svg:nth-child(8) {
+  top: 86vh;
+  left: 37vw;
+  fill: #8762cb;
+}
+
+.eight svg:nth-child(9) {
+  top: 94vh;
+  left: 87vw;
+  fill: #9a90da;
+}
+
+.wish-hbd {
+  font-size: 3em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.wish h5 {
+  font-weight: lighter;
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+}
+
+.nine p {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+#replay {
+  z-index: 3;
+  cursor: pointer;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+  .one {
+    font-size: 3.5rem;
+  }
+
+  .three {
+    font-size: 2.5rem;
+  }
+
+  .wish-hbd {
+    font-size: 2.5em;
+  }
+
+  .wish h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .four .text-box {
+    width: 80%;
+  }
+
+  .six .lydia-dp {
+    width: 250px; /* Adjust as needed */
+    height: 250px; /* Adjust as needed */
+  }
+
+  .six .hat {
+    left: 35%;
+  }
+
+  .idea-5 {
+    font-size: 3rem;
+  }
+
+  .five p {
+    font-size: 1.5rem;
+  }
+
+  .nine p {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .one {
+    font-size: 2.5rem;
+  }
+
+  .three {
+    font-size: 2rem;
+  }
+
+  .five p {
+    font-size: 1.2rem;
+  }
+
+  .six .lydia-dp {
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
+  }
+
+  .six .hat {
+    width: 60px; /* Adjust size for smaller screens */
+    left: 30%;
+  }
+
+  .idea-5 {
+    font-size: 2.5rem;
+  }
+
+  .wish-hbd {
+    font-size: 2em;
+  }
+
+  .wish h5 {
+    font-size: 1rem;
+  }
+
+  .nine p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .one {
+    height: auto; /* Remove full height for mobile */
+    padding: 10px; /* Optional padding */
+    text-align: center; /* Center text horizontally on mobile */
+  }
+
+  .three {
+    font-size: 1.5rem;
+  }
+
+  .four .text-box {
+    width: 300px;
+  }
+
+  .five p {
+    font-size: 1rem;
+  }
+
+  .six .lydia-dp {
+    width: 100px; /* Adjust size for mobile screens */
+    height: 100px; /* Adjust size for mobile screens */
+  }
+
+  .idea-5 {
+    font-size: 2rem;
+  }
+
+  .wish-hbd {
+    font-size: 1.5em;
+  }
+
+  .wish h5 {
+    font-size: 0.8rem;
+  }
+
+  .nine p {
+    font-size: 1rem;
+  }
+}
+
+.cake-container {
+  position: fixed;
+  bottom: -100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: bottom 1.5s ease-in-out;
+}
+
+.cake.show {
+  bottom: 50px;
+}
+
+/* .cake-container {
+  position: fixed;
+  bottom: -150px; 
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: bottom 1.5s ease-in-out;
+} */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Cake appears with animation */
+.cake {
+  display: block;
+  margin: 0 auto;
+  height: 200px;
+  width: 200px; /* Adjust size as needed */
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+  animation-delay: 45s; /* Delays the appearance of the cake */
+  margin-top: 20px;
+}
+
+.cake-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  animation: fadeInCake 3s ease-in forwards;
+  animation-delay: 10s; /* Delay to ensure it appears after 10 seconds */
+}
+
+@keyframes fadeInCake {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Style for final-section */
+.final-section {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.final-photo {
+  position: relative;
+  display: inline-block;
+}
+
+.final-photo .lydia-dp {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.animated-cake {
+  position: absolute;
+  bottom: -100px; /* Start off-screen */
+  left: 50%;
+  transform: translateX(-50%);
+  height: 200px;
+  width: 200px;
+  animation: cakeSlideUp 2s ease forwards;
+  animation-delay: 45s; /* Delay to let the "Me.png" appear first */
+}
+
+/* Animation for cake sliding up */
+@keyframes cakeSlideUp {
+  0% {
+    bottom: -500px;
+    opacity: 0;
+  }
+  100% {
+    bottom: 50px; /* Position where cake ends up */
+    opacity: 1;
+  }
+}
+
+/* Fade-in effect for final-section */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.wishText {
+  font-size: 3em;
+}
+
+#bottomPlayMusicButton {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #007bff; /* or any color you prefer */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  z-index: 10;
+}
